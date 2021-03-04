@@ -39,8 +39,8 @@ spec:
         - -enable-webhook=true
         - -webhook-svc-namespace=kubeflow
         - -webhook-port=8080
-        - -webhook-svc-name=spark-webhook
-        - -webhook-config-name=sparkoperator-webhook-config
+        - -webhook-svc-name=spark-operatorspark-webhook
+        - -webhook-config-name=spark-operatorsparkoperator-webhook-config
         volumeMounts:
         - name: webhook-certs
           mountPath: /etc/webhook-certs
