@@ -21,4 +21,4 @@ spec:
       - name: main
         image: gcr.io/spark-operator/spark-operator:v1beta2-1.2.0-3.0.0
         imagePullPolicy: IfNotPresent
-        command: ["/usr/bin/gencerts.sh", "-p", "-n", "kubeflow"]
+        command: ["/usr/bin/gencerts.sh", "-p", "-n", "kubeflow", "-s", "spark-operatorspark-webhook"]
