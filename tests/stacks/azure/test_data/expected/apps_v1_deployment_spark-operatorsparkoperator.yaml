@@ -13,7 +13,7 @@ spec:
     matchLabels:
       app.kubernetes.io/component: spark-operator
       app.kubernetes.io/name: sparkoperator
-      app.kubernetes.io/version: v1beta2-1.1.0-2.4.5
+      app.kubernetes.io/version: v1beta2-1.2.0-3.0.0
       kustomize.component: spark-operator
   strategy:
     type: Recreate
@@ -27,7 +27,7 @@ spec:
       labels:
         app.kubernetes.io/component: spark-operator
         app.kubernetes.io/name: sparkoperator
-        app.kubernetes.io/version: v1beta2-1.1.0-2.4.5
+        app.kubernetes.io/version: v1beta2-1.2.0-3.0.0
         kustomize.component: spark-operator
     spec:
       containers:
@@ -43,7 +43,7 @@ spec:
         - -metrics-port=10254
         - -metrics-endpoint=/metrics
         - -metrics-prefix=
-        image: gcr.io/spark-operator/spark-operator:v1beta2-1.1.0-2.4.5
+        image: gcr.io/spark-operator/spark-operator:v1beta2-1.2.0-3.0.0
         imagePullPolicy: IfNotPresent
         name: sparkoperator
         ports:
